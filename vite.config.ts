@@ -1,5 +1,5 @@
 import { UserConfig, UserConfigFn } from "vite";
-import { dependencies } from "./package.json";
+import pkg from "./package.json";
 import { builtinModules } from "module";
 
 export default <UserConfigFn>function ({ mode, command }) {
@@ -16,7 +16,7 @@ export default <UserConfigFn>function ({ mode, command }) {
                 fileName: "index"
             },
             rollupOptions: {
-                external: [ ... builtinModules, ... Object.keys(dependencies) ]
+                external: [ ... builtinModules, ... Object.keys(pkg["dependencies"] || {}) ]
             }
         }
     }
