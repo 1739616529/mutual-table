@@ -1,20 +1,27 @@
 {
-  "name": "mutual-table",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/1739616529/mutual-table.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/1739616529/mutual-table/issues"
-  },
-  "homepage": "https://github.com/1739616529/mutual-table#readme"
-}
+    "name": "mutual-table",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite build --mode development"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/1739616529/mutual-table.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/1739616529/mutual-table/issues"
+    },
+    "homepage": "https://github.com/1739616529/mutual-table#readme",
+    "devDependencies": {
+        "@types/node": "^20.3.0",
+        "typescript": "^5.1.3",
+        "vite": "^4.3.9"
+    },
+    "dependencies": {}
+} 
