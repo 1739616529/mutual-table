@@ -1,2 +1,6 @@
 const { test, Test } = require("../dist/index");
-console.log(Test)
+process.stdout.write("321")
+setTimeout(() => {
+    process.stdout.clearLine()
+    process.stdout.write("333")
+})
